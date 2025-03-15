@@ -1,0 +1,139 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 2rem;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input[type="text"] {
+    padding: 0.4rem;
+    padding-left: 1rem;
+    width: 100%;
+    border: 0 solid #ddd;
+    border-radius: 5px;
+}
+
+
+.navbar-dropdown {
+    margin: 0 5rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn,
+.btn-filter {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-filter {
+    border-radius: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.dropbtn:hover {
+    background: #007bffac;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-width: calc(100vw - 20px);
+    /* Set maximum width to prevent overflow */
+}
+
+.dropdown-content button {
+    width: 100%;
+    color: rgb(8, 8, 8);
+    padding: 6px 8px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    color: #fff;
+    background: #007bff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    left: 0;
+    /* Position the dropdown to the left */
+}
+
+.filter-dropdown {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.black {
+    color: #000;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .navbar div {
+        margin: 5px auto;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .navbar-dropdown {
+        margin: 0;
+    }
+
+    .navbar-search {
+        flex-direction: column;
+        align-items: center;
+    }
+}

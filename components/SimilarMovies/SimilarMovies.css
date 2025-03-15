@@ -1,0 +1,21 @@
+.main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    overflow-x: scroll;
+}
+
+.main p {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.wrapper img {
+    width: 250px;
+    height: 250px;
+}

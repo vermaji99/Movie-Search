@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #1C1C1C;
+    color: rgb(237, 239, 239);
+
+}
+
+.container {
+    width: 95%;
+    max-width: 1440px;   
+    margin: 2rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 90%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 1rem auto;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        align-content: flex-start;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Responsive container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Grid layout for movies */
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Movie card styling */
+  .movie-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .movie-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .movie-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .movie-details-content {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .movie-poster {
+      width: 300px;
+    }
+  }
+    
