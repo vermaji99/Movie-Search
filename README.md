@@ -1,6 +1,6 @@
 # Movie-Search
  Setup
-
+LINK - https://soft-fudge-b3320c.netlify.app/
 Clone & Navigate:https://github.com/vermaji99/Movie-Search.git
 Install & Run:npm install && npm start
 Open in Browser: http://localhost:3000/
